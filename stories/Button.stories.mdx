@@ -1,0 +1,20 @@
+import { ArgsTable, Canvas, Meta, Story } from '@storybook/addon-docs';
+import {MyButton, MyButtonProps} from '../src/MyButton';
+
+<Meta title="MDX/MyButton" component={MyButton} />
+
+# MyButton
+
+With `MDX`, we can define a story for `Checkbox` right in the middle of our Markdown documentation.
+
+<Canvas>
+  <Story name="all buttons">
+      <MyButton variant="primary">MYBUTTON</MyButton>
+      <MyButton variant="secondary">MYBUTTON</MyButton>
+  </Story>
+  <ArgsTable of={MyButton} />
+</Canvas>
+
+
+
+
